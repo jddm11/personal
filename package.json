@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "./node_modules/.bin/webpack -p --config ./webpack/webpack.dev.config.js"
+    "dev": "./node_modules/.bin/webpack -p --define NODE_ENV=production --config ./webpack/webpack.dev.config.js"
   },
   "repository": {
     "type": "git",
@@ -23,7 +23,7 @@
   "bugs": {
     "url": "https://github.com/jddm11/personal/issues"
   },
-  "homepage": "https://github.com/jddm11/personal",
+  "homepage": "https://jddm11.github.io/personal",
   "dependencies": {
     "react": "^16.1.1",
     "react-dom": "^16.1.1",

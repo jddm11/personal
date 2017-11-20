@@ -12,8 +12,8 @@ export default () => {
      <Route exact path='/' component={App}/>
      <Route path='/about_me' component={About}/>
      <Route path='/industry' component={Industry}/>
-     <Route path='/Academia' component={Academia}/>
-     <Route path='/Resume' component={Resume}/>
+     <Route path='/academia' component={Academia}/>
+     <Route path='/resume' component={Resume}/>
    </Switch>
    </BrowserRouter>
  )
