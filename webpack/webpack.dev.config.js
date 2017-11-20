@@ -2,7 +2,7 @@ const path = require('path')
 const webpack = require('webpack')
 
 const analyze = !!process.env.ANALYZE_ENV
-const env = process.env.NODE_ENV || 'development'
+const env = process.env.NODE_ENV || 'production'
 var parentDir = path.join(__dirname, '../');
 
 const webpackConfig = {
@@ -30,7 +30,7 @@ const webpackConfig = {
   plugins: [
     new webpack.DefinePlugin({
       'process.env': {
-        NODE_ENV: JSON.stringify(env),
+        NODE_ENV: JSON.stringify('production'),
       },
     }),
   ],
